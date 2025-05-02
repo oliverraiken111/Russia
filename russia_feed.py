@@ -57,7 +57,7 @@ ET.SubElement(image, 'link').text = url
 articles_found = 0
 seen_titles = set()
 
-for teaser in soup.select('a[data-testid="link"]'):
+for teaser in soup.select('a.css-1l4spti'):
     title = teaser.get_text(strip=True)
     href = teaser.get("href")
 
