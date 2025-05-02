@@ -29,8 +29,8 @@ rss = ET.Element('rss', {
     "version": "2.0",
     "xmlns:media": namespaces['media'],
     "xmlns:dc": namespaces['dc'],
-    "xmlns:atom": namespaces['atom'],
     "xmlns:nyt": namespaces['nyt']
+    # Removed the duplicate xmlns:atom declaration
 })
 channel = ET.SubElement(rss, 'channel')
 ET.SubElement(channel, 'title').text = "NYT > Russia Spotlight"
